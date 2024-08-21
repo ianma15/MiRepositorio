@@ -6,9 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    {% for pais in paises %}:
-        <p>{{ pais }}</p>
-    {% endfor %}
-    <button><a href="{% url 'familiares:index' %}">Volver</a></button>
+    <h1>Home</h1>
+    <a href="{% url 'familiares:index' %}">App Familiares</a>
 </body>
 </html>

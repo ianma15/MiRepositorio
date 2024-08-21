@@ -4,6 +4,9 @@ from .models import Pais, Familiar
 
 # Create your views here.
 
+def index(request):
+    return render(request, 'familiares/index.html')
+
 def pais_list(request):
     paises = Pais.objects.all()
     contexto = {"paises": paises}
